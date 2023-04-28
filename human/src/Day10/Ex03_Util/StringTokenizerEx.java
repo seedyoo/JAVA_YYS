@@ -2,7 +2,7 @@ package Day10.Ex03_Util;
 
 import java.util.StringTokenizer;
 
-public class StringTokenizerRx {
+public class StringTokenizerEx {
 
 	public static void main(String[] args) {
 		// StringTokenizer
