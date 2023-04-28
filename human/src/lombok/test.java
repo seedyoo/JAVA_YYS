@@ -6,8 +6,8 @@ public class test {
 		
 		Board board = new Board();
 		
-		board.setBoardNo(10);
-		
+		System.out.println(board);
+		// board.setBoardNo(10);
 		
 		
 	}
