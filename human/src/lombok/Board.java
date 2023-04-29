@@ -26,4 +26,6 @@ public class Board {
 	private Date updDate;
 	
 	
+	
+	
 }
