@@ -1,4 +1,4 @@
-package Practice;
+package codeup10;
 
 import java.util.Scanner;
 

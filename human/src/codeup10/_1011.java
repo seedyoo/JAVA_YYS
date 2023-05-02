@@ -1,13 +1,13 @@
-package Practice;
+package codeup10;
 
 import java.util.Scanner;
 
-public class _1009 {
+public class _1011 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		System.out.println(a);
+		String chat = sc.nextLine();
+		System.out.println(chat);
 		sc.close();
 	}
 }

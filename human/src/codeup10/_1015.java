@@ -1,15 +1,14 @@
-package Practice;
+package codeup10;
 
 import java.util.Scanner;
 
-public class _1018 {
+public class _1015 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String d = sc.next();
+		float f = sc.nextFloat();
 		
-		System.out.println(d);
-		
+		System.out.println(String.format("%.2f", f));
 		sc.close();
 	}
 }
