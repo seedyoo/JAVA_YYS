@@ -17,7 +17,10 @@ public class JDBConnection {
 			// MySQL
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			// DB 연결
+			// DB 에 연결
+			// - 연결에 필요한 정보 : URL, id, pw
+			// URL : jdbc:mysql://도메인:[PORT]/[스키마]?옵션파라미터
+			//     * 내 PC의 IP주소 :  localhost : 127.0.0.1
 			String url = "jdbc:mysql://localhost:3306/human?serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&useSSL=false";
 			String id = "human";
 			String pw = "123456";
@@ -34,10 +37,9 @@ public class JDBConnection {
 		
 	}
 	
-	public static void main(String[] args) {
-		JDBConnection jc = new JDBConnection();
-		
-	}
+//	public static void main(String[] args) {
+//		JDBConnection jc = new JDBConnection();
+//	}
 	
 	
 }
