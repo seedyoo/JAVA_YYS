@@ -53,5 +53,4 @@ public class Pikachu {
 		return "Pikachu [energy=" + energy + ", type=" + type + ", level=" + level + "]";
 	}
 	
-	
 }

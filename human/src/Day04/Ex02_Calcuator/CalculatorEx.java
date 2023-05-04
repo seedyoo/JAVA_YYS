@@ -35,8 +35,6 @@ public class CalculatorEx {
 		System.out.println("sum : " + sum);
 		System.out.println("avg : " + avg);
 		
-		
-		
 	}
 	
 }
