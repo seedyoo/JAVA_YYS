@@ -52,6 +52,7 @@ public class Calculator {
 		}
 		return sum;
 	}
+	
 	// 평균 - (합계) / (개수)
 	public double avg(int[] arr) {
 		int sum = sum(arr);

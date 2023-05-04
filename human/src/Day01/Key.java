@@ -33,8 +33,6 @@ package Day01;
 	- 라인 찾기		: ctrl + L
 	- 한 번에 import	: ctrl + shift + O
 	- 자동 완성		: ctrl + space
-	
-	
 */
 public class Key {
 	public static void main(String[] args) {

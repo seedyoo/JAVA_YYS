@@ -22,7 +22,7 @@ public class InputMismatch {
 			
 			// try-catch 에외처리문 작성
 			try {
-				menuNo = sc.nextInt();		// 예외방생 가능성 있는 문장
+				menuNo = sc.nextInt();		// 예외발생 가능성 있는 문장
 			} catch (InputMismatchException e) {
 				sc.next();					// 입력 스트림에 남아있는 (엔터) 비움
 				System.err.println("(0~4) 사이의 정수를 입력해주세요");

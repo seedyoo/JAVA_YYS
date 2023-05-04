@@ -26,7 +26,6 @@ public class Ex07_ZigZag {
 		// 1행 - 열 : 0 ~ 3	+1
 		// 2행 - 열 : 0 ~ 3	-1
 		// ...
-		
 
 		int sw = 1;
 		int k = 1;
