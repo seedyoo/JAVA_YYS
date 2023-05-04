@@ -20,7 +20,6 @@ public class Ex08_Enum {
 		}
 		System.out.println();
 		
-		
 		// valueOf()		: 전달된 문자열과 일치하는 열거체 상수를 반환
 		Rainbow G = Rainbow.valueOf("GREEN");
 		System.out.println("G : " + G);
