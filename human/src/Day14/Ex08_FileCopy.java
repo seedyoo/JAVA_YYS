@@ -24,6 +24,7 @@ public class Ex08_FileCopy {
 			FileInputStream fis = new FileInputStream(originFile);
 			FileOutputStream fos = new FileOutputStream(copyFile);
 			
+			
 			int data;
 			
 			while( (data = fis.read() ) != -1 ) {
