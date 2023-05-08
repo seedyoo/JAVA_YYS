@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Ex08_FileCopy {
 
@@ -71,6 +72,29 @@ public class Ex08_FileCopy {
 	}
 	
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("원본 파일 경로 : ");
+		String origin = sc.nextLine();
+		
+		System.out.print("사본 파일 경로 : ");
+		String copy = sc.nextLine();
+		
+		File originFile = new File(origin);
+		File copyFile = new File(copy);
+		
+		long stdTime = System.nanoTime();
+		
+		// fileByteCopy(originFile, copyFile);
+		fileCopy(originFile, copyFile);
+		
+		long endTime = System.nanoTime();
+		
+		System.out.println("시간 : " + (endTime-stdTime) /1000/1000/1000 );
+		
+		// 바이트 : 2756000나노초
+		// KB	: 961500나노초
+		
+		sc.close();
 	}
 }
