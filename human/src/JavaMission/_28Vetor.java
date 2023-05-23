@@ -7,42 +7,37 @@ import java.util.Vector;
 public class _28Vetor {
 
 	public static void main(String[] args) {
-				Vector<String> vector = new Vector<String>(10);
-				
-				// 요소 추가
-				vector.add("10");
-				vector.add("20");
-				vector.add("30");
-				vector.add("40");
-				vector.add("50");
+		Vector<Integer> vector = new Vector<>();
 
-				// 개수, 용량 확인
-				System.out.println("벡터 요소 수 : " + vector.size());
-				List<String> IList = new Vector<String>();
-				
-				for (String item : vector) {
-					System.out.print(" " + item);
-				}
-				System.out.println();
-				
-				System.out.println(vector.size());
-				
-				System.out.println("벡터 용량 : " + vector.capacity());
-				
-//				Iterator<String> it = IList.iterator();
-//				while(it.hasNext()) {
-//					int n = it.next();
-//					System.out.println(n);
-//				}
-//				
-//				int sum = 0;
-//				it = vector.iterator();  
-//				while(it.hasNext()) {
-//					int n = it.next();
-//					sum += n; 
-//				}
-//				System.out.println("벡터에 있는 정수 합 : " + sum);
-//				
+        vector.add(10);
+        vector.add(20);
+        vector.add(30);
+        vector.add(40);
+        vector.add(50);
+
+        // 요소 수 출력
+        System.out.println("벡터 요소 수: " + vector.size());
+
+        // 벡터 요소 출력
+        // System.out.print("벡터 요소: ");
+        Iterator<Integer> iterator = vector.iterator();
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
+        System.out.println();
+
+        // 요소 수 출력
+        System.out.println("요소 수: " + vector.size());
+
+        // 벡터 용량 출력
+        System.out.println("벡터 용량: " + vector.capacity());
+
+        // 총합 계산
+        int sum = 0;
+        for (int i = 0; i < vector.size(); i++) {
+            sum += vector.get(i);
+        }
+        System.out.println("총합: " + sum);
 				
 				
 
