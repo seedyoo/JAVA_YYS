@@ -27,6 +27,7 @@ public class _14Lotto {
                 lottoNumbers.add(number);
             }
         }
+        
 
         return lottoNumbers;
     }
