@@ -1,17 +1,17 @@
 package JavaMission;
 
-public class _22Point {
+public class _18Point {
 
 	int x, y;
 
 	// 기본 생성자
-	public _22Point() {
+	public _18Point() {
 		this(0, 0);
 	}
 
 	// alt + shift + S -> Generate Contstuctor Using Field
 	// 매개변수가 있는 생성자
-	public _22Point(int x, int y) {
+	public _18Point(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}

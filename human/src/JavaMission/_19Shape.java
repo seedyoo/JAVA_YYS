@@ -1,8 +1,8 @@
 package JavaMission;
 
-public abstract class _22Shape {
+public abstract class _19Shape {
 
-	_22Point point;
+	_18Point point;
 	
 	// 넓이와 둘레를 구하는 메소드 원형을 정의하시오.
 	// 추상 메소드
@@ -15,10 +15,10 @@ public abstract class _22Shape {
 	
 	// getter, setter
 	// source menu (alt + shift + s : R)
-	public _22Point getPoint() {
+	public _18Point getPoint() {
 		return point;
 	}
-	public void setPoint(_22Point point) {
+	public void setPoint(_18Point point) {
 		this.point = point;
 	}
 	

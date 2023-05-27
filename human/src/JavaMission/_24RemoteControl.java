@@ -1,6 +1,6 @@
 package JavaMission;
 
-public interface _27RemoteControl {
+public interface _24RemoteControl {
 
 	// 상수
 	// 인터페이스 변수는 public static final 로 자동으로 선언된다.

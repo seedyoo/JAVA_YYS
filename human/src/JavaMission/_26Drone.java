@@ -1,7 +1,7 @@
 package JavaMission;
 
 // 인터페이스 구현 키워드 : implements
-public class _27Drone implements _27RemoteControl{
+public class _26Drone implements _24RemoteControl{
 
 	// 변수
 	private int speed;			// 음량
@@ -20,12 +20,12 @@ public class _27Drone implements _27RemoteControl{
 	public void setSpeed(int speed) {
 		// 유효성 검사
 		// 볼륨 최댓값을 넘지 못하게 지정
-		if( speed > _27RemoteControl.MAX_SPEED ) {
-			this.speed = _27RemoteControl.MAX_SPEED;
+		if( speed > _24RemoteControl.MAX_SPEED ) {
+			this.speed = _24RemoteControl.MAX_SPEED;
 		}
 		// 볼륨 최솟값을 넘지 못하게 지정
-		else if(speed < _27RemoteControl.MIN_SPEED ) {
-			this.speed = _27RemoteControl.MIN_SPEED;
+		else if(speed < _24RemoteControl.MIN_SPEED ) {
+			this.speed = _24RemoteControl.MIN_SPEED;
 		}
 		else {
 			this.speed = speed;

@@ -1,7 +1,7 @@
 package JavaMission;
 
 import java.util.Scanner;
-public class _3_369 {
+public class _03_369 {
 	
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);

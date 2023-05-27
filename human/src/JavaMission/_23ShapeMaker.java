@@ -2,11 +2,11 @@ package JavaMission;
 
 import java.util.Scanner;
 
-public class _22ShapeMaker {
+public class _23ShapeMaker {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		_22Shape shape = null;
+		_19Shape shape = null;
 		double width = 0.0;
 		double height = 0.0;
 		double radius = 0.0;
@@ -15,7 +15,7 @@ public class _22ShapeMaker {
 		double areaSum = 0.0;
 		
 		// 입력 받은 도형 정보 배열
-		_22Shape[] shapeList = new _22Shape[3];
+		_19Shape[] shapeList = new _19Shape[3];
 		int index = 0;
 		
 		while( true ) {
@@ -37,7 +37,7 @@ public class _22ShapeMaker {
 					System.out.print("세로>>");
 					height = sc.nextDouble();
 					
-					shape = new _22Triangle(width, height);
+					shape = new _20Triangle(width, height);
 					shapeList[index++] = shape;
 					break;
 
@@ -48,7 +48,7 @@ public class _22ShapeMaker {
 					System.out.print("높이>>");
 					height = sc.nextDouble();
 				
-					shape = new _22Rectangle(width, height);
+					shape = new _21Rectangle(width, height);
 					shapeList[index++] = shape;
 					break;
 				
@@ -64,16 +64,16 @@ public class _22ShapeMaker {
 		} // - while 끝
 		
 		
-		for (_22Shape s : shapeList) {
+		for (_19Shape s : shapeList) {
 			
 			if( s == null ) {
 				continue;
 			}
 			
 			// instanceof 인스턴스를 비교하는 연산
-			if( s instanceof _22Triangle)
+			if( s instanceof _20Triangle)
 				System.out.println("[삼각형]");
-			if( s instanceof _22Rectangle)
+			if( s instanceof _21Rectangle)
 				System.out.println("[사각형]");
 			if( s instanceof _22Circle)
 				System.out.println("[원형]");

@@ -3,7 +3,7 @@ package JavaMission;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _6Lotto {
+public class _06Lotto {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

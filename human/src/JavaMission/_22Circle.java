@@ -1,6 +1,6 @@
 package JavaMission;
 
-public class _22Circle extends _22Shape {
+public class _22Circle extends _19Shape {
 
 	double radius;
 	
