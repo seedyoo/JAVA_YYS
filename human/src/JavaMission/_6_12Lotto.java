@@ -2,7 +2,7 @@ package JavaMission;
 
 import java.util.Scanner;
 
-public class _6Lotto {
+public class _6_12Lotto {
 
 	public static void main(String[] args) {
 		System.out.print("몇 개임? ");
