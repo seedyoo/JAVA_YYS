@@ -4,7 +4,7 @@ public class _27Driver {
 
 	public static void main(String[] args) {
 		// 인터페이스타입 객체명 = new 구현클래스();
-		_27RemoteControl RcDrone = new _27Drone();
+		_24RemoteControl RcDrone = new _26Drone();
 		RcDrone.turnOn();
 		RcDrone.setSpeed(5);
 		RcDrone.setSpeed(100);
@@ -12,7 +12,7 @@ public class _27Driver {
 		RcDrone.turnOff();
 		System.out.println();
 		
-		_27RemoteControl RcCar = new _27RcCar();
+		_24RemoteControl RcCar = new _25RcCar();
 		RcCar.turnOn();
 		RcCar.setSpeed(5);
 		RcCar.setSpeed(-100);
@@ -20,7 +20,7 @@ public class _27Driver {
 		RcCar.turnOff();
 		System.out.println();
 		
-		_27RemoteControl.changeBattery();	// 리모콘 배터리 교체
+		_24RemoteControl.changeBattery();	// 리모콘 배터리 교체
 		
 		
 	}
