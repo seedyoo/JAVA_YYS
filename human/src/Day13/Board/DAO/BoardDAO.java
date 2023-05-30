@@ -97,6 +97,7 @@ public class BoardDAO extends JDBConnection  {
 				   + " VALUES( ?, ?, ? ) ";
 		*/
 		
+		
 		// oracle
 		String sql = " INSERT INTO board ( board_no, title, writer, content )"
 				   + " VALUES( SEQ_BOARD.nextval, ?, ?, ? ) ";
