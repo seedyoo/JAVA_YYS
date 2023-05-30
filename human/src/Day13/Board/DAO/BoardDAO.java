@@ -90,8 +90,16 @@ public class BoardDAO extends JDBConnection  {
 		
 		int result = 0;
 		
+		// mysql
+		// - board_no (AUTO INCREAMENT 옵션)
+		/*
 		String sql = " INSERT INTO board ( title, writer, content )"
 				   + " VALUES( ?, ?, ? ) ";
+		*/
+		
+		// oracle
+		String sql = " INSERT INTO board ( board_no, title, writer, content )"
+				   + " VALUES( SEQ_BOARD.nextval, ?, ?, ? ) ";
 		
 		try {
 			psmt = con.prepareStatement(sql);		// 쿼리 실행 객체 생성
@@ -129,10 +137,13 @@ public class BoardDAO extends JDBConnection  {
 				   + " SET title = ? "
 				   + "    ,writer = ? "
 				   + "    ,content = ? "
-				   + "	  ,upd_date = now() "
+				//   + "  ,upd_date = now() "		// - mysql
+				   + "	  ,upd_date = sysdate "		// - oracle
 				   + " WHERE board_no = ? "
 				   ;
-		// - now() : 현재 날짜/시간을 반환하는 mysql 함수
+		// MySQL  - now() 	: 현재 날짜/시간을 반환
+		// Oracle - sysdate : 현재 날짜/시간을 반환
+		
 		
 		try {
 			psmt = con.prepareStatement(sql);		// 쿼리 실행 객체 생성
